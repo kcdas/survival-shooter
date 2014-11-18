@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if(isSinking)
         {
-            transform.Translate (-Vector3.up * sinkSpeed * Time.deltaTime);
+            transform.Translate (Vector3.up * sinkSpeed * Time.deltaTime);
         }
     }
 
@@ -75,6 +75,6 @@ public class EnemyHealth : MonoBehaviour
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
         ScoreManager.score += scoreValue;
-        Destroy (gameObject, 2f);
+        Destroy (gameObject, 5f);
     }
 }
