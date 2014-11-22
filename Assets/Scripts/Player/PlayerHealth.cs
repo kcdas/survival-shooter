@@ -80,6 +80,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void RestartLevel ()
     {
+		Debug.Log ("public RestartLevel");
         Application.LoadLevel (Application.loadedLevel);
     }
 }
